@@ -205,7 +205,7 @@ public class HmOperators {
                 System.out.print(a + " ");
             }
         }
-        System.out.println("");
+        System.out.println();
         row();
     }
     public static void fiveToOne(){
@@ -230,7 +230,7 @@ public class HmOperators {
             System.out.print(a + " ");
             a += 7;
         }
-        System.out.println("");
+        System.out.println();
         row();
     }
     public static void firstTen(){
@@ -239,7 +239,7 @@ public class HmOperators {
             System.out.print(num + " ");
             num -= 5;
         }
-        System.out.println("");
+        System.out.println();
         row();
     }
     public static void square(){
@@ -247,7 +247,7 @@ public class HmOperators {
             int num = a * a;
             System.out.print(num + " ");
         }
-        System.out.println("");
+        System.out.println();
         row();
     }
 
@@ -261,17 +261,17 @@ public class HmOperators {
             f0 = b;
             System.out.print(f1 + " ");
         }
-        System.out.println("");
+        System.out.println();
         row();
     }
     public static void deposit(){
         System.out.print("Введите сумму вклада: ");
         float money = input().nextFloat();
-        System.out.println("");
+        System.out.println();
 
         System.out.print("Введите количество месяцев: ");
         int month = input().nextInt();
-        System.out.println("");
+        System.out.println();
         System.out.printf("Возможно будет так %.2f \n", (money + (month * (money * 0.07))));
         for (int a = 1; a <= month; a++){
             money = (float) (money + (money * 0.07));
@@ -286,7 +286,7 @@ public class HmOperators {
             for (int b = 1; b <= 10; b++){
                 System.out.printf("%d * %d = %d\n", a, b, (a * b));
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }
