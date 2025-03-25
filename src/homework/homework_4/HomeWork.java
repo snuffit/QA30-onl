@@ -174,7 +174,7 @@ public class HomeWork {
         return min;
     }
 
-    //Задание 3 !Неправельно понял задание и реализовал создание массива через ввод в консоль в одну строку
+    //Задание 3 !Неправильно понял задание и реализовал создание массива через ввод в консоль в одну строку
     public static void equalsArithmeticArray(){
         int[] firstArray = new int[5];
         int[] secondArray = new int[5];
