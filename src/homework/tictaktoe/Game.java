@@ -94,7 +94,11 @@ public class Game {
     public void congratulation(){
         if(winPlayer == player.getSequence()){
             System.out.println("Поздравляем с победой!!!");
-        }else {
+        }
+        else if(winPlayer == 3){
+            System.out.println("У вас ничья!");
+        }
+        else {
             System.out.println("Победил ИИ, старайсля лучше!!!");
         }
     }
@@ -102,7 +106,8 @@ public class Game {
         if((checkRow(field) != 0) ||
                 (checkColomn(field) != 0) ||
                 (checkCrossL(field) != 0) ||
-                (checkCrossR(field) != 0)){
+                (checkCrossR(field) != 0) ||
+                (checkTie(field) != 0)){
             return true;
         }
         return false;
@@ -191,6 +196,21 @@ public class Game {
                     return 2;
                 }
             }
+        }
+        return 0;
+    }
+    private int checkTie(char[][] field){
+        int count = 0;
+        for(char[] row : field){
+            for (char colomn : row){
+                if(colomn == '*'){
+                    return 0;
+                }
+            }
+        }
+        if(count == 0){
+            this.winPlayer = 3;
+            return 3;
         }
         return 0;
     }
