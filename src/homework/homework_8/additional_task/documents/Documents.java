@@ -5,6 +5,7 @@ import java.util.Date;
 public abstract class Documents implements PrintDocInfo {
     Date date;
 
+
     public Documents(){
         this.date = new Date();
     }
